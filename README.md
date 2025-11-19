@@ -148,3 +148,11 @@ Portanto, “água poluída não significa necessariamente água contaminada, ma
 10) Segundo a Organização Mundial da Saúde (OMS), mais de 80% dos casos de doenças no mundo resultam da ingestão de água contaminada.
 
 São mais de 25 tipos diferentes de enfermidades.
+
+_________________________________________________________________________________________
+
+Artigos Página Inicial - abre em outra página
+
+1 - https://www.unwater.org/publications/un-world-water-development-report-2025
+
+2 - https://www.unwater.org/publications/progress-household-drinking-water-sanitation-and-hygiene-2000-2024-special-focus
