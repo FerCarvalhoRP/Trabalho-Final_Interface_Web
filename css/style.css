@@ -120,6 +120,18 @@ nav ul li a:hover{
     padding: 20px;
 }
 
+.artigos article img {
+    width: 100px;
+    height: auto;
+}
+
+.artigos article {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
 .artigos article{
     background-color: #FFFFFF;
     padding: 15px;
