@@ -16,8 +16,8 @@ html{
     background-color: #FFFFFF;
     max-width: 1000px;
     margin: 0 auto;
-    border-radius: 10px; /* NAO FOI VISTO*/
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* NAO FOI VISTO */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 /******************************************************************
@@ -50,12 +50,12 @@ nav ul li a{
     font-weight: bold;
     margin: 0 15px;
     padding-bottom: 3px;
-    transition: 0.3s; /* NAO FOI VISTO */
+    transition: 0.3s; 
 }
 
 nav ul li a:hover{
     border-bottom: 3px solid #FFFFFF;
-    color: #d8ffff; /* hover mais moderno */
+    color: #d8ffff;
 }
 
 /******************************************************************
@@ -74,7 +74,7 @@ nav ul li a:hover{
 
 .destaque figure img{
     width: 100%;
-    border-radius: 8px; /* NAO FOI VISTO */
+    border-radius: 8px; 
 }
 
 .destaque p{
@@ -99,8 +99,8 @@ nav ul li a:hover{
     float: left;
     margin: 1.5%;
     padding: 15px;
-    border-radius: 10px; /* NAO FOI VISTO */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* NAO FOI VISTO */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
 }
 
 .card h2{
@@ -136,7 +136,7 @@ nav ul li a:hover{
     background-color: #FFFFFF;
     padding: 15px;
     margin-bottom: 10px;
-    border-radius: 8px; /* NAO FOI VISTO */
+    border-radius: 8px; 
 }
 
 /******************************************************************
@@ -168,7 +168,7 @@ form input{
     height: 32px;
     margin-top: 5px;
     padding: 5px;
-    border-radius: 5px; /* NAO FOI VISTO */
+    border-radius: 5px; 
 }
 
 form button{
@@ -179,7 +179,7 @@ form button{
     background-color: #1D3557;
     color: #fff;
     border: none;
-    border-radius: 5px; /* NAO FOI VISTO */
+    border-radius: 5px;
 }
 
 form button:hover{
