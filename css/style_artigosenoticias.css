@@ -1,0 +1,130 @@
+/******************************************************************
+*********************Configuracoes Gerais**************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #e8f6ff;
+}
+
+#container{
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/******************************************************************
+***************************Cabecalho*******************************/
+header{
+    background: linear-gradient(90deg, #3AB4F2, #3AB4F2); /*(gradiente) */
+    padding-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0 15px;
+    padding-bottom: 3px;
+    transition: 0.3s; 
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid #FFFFFF;
+    color: #d8ffff;
+}
+
+/* TITULO DA PAGINA */
+.titulo-pagina {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.titulo-pagina h2 {
+    margin-bottom: 10px;
+}
+
+/* LISTA DE ARTIGOS */
+.lista-artigos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ITEM DO ARTIGO */
+.artigo-item {
+    display: flex;
+    gap: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Imagem */
+.artigo-item figure img {
+    width: 260px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Texto do artigo */
+.texto-artigo h3 {
+    margin-top: 0;
+}
+
+.texto-artigo p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background: #0b71c7;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .artigo-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .artigo-item figure img {
+        width: 100%;
+    }
+}
