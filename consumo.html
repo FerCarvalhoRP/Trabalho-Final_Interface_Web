@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>Dia Mundial da Água</title>
     <link rel="stylesheet" href="css/style_consumo.css">
+
+    <!-- Importando a biblioteca Chart.js por CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <Style>
+        body {
+            background-image: url(Imagens/Fundo.png);
+            background-size: 80%;
+            background-repeat: repeat;
+        }
+    </style>
+    
 </head>
 <body>
 
@@ -15,10 +26,10 @@
 
         <nav>
             <ul>
-                <li><a href="pagina_inicial.html">Página Incial</a></li>
+                <li><a href="pagina_inicial.html">Sobre</a></li>
                 <li><a href="consumo.html">Consumo</a></li>
-                <li><a href="artigos_notícias.html">Artigos e Noticias</a></li>
-                <li><a href="#">Iniciativas</a></li>
+                <li><a href="#">Artigos e Noticias</a></li>
+                <li><a href="iniciativas.html">Iniciativas</a></li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
@@ -29,160 +40,104 @@
     <section class="destaque">
         <figure>
             <!-- imagem exemplo -->
-            <img src="Imagens/imagem destaque.png" alt="Imagem agua">
+            <img src="Imagens/destaque.jpg" alt="Imagem agua">
         </figure>
         <p>
             O Dia Mundial da Água, celebrado em 22 de março de cada ano desde 1993, é uma data comemorativa anual das Nações Unidas que destaca a importância da água doce. A data celebra a água e conscientiza sobre os 2,1 bilhões de pessoas que vivem sem acesso à água potável. Trata-se de uma iniciativa para combater a crise global da água. 
+            
         </p>
     </section>
 
     <!-- CONTEUDO PRINCIPAL -->
     <main>
 
-        <h1 id="dicas"> Faça sua parte: ações práticas para o uso consciente da água </h1>
+        <h1 class="dicas"> Faça sua parte: ações práticas para o uso consciente da água </h1>
         
-        <section class="cards">
-        <ol>
-            <article class="card">
-               
-                <li>
-                   <p>Deixe a torneira fechada ao escovar os dentes, fazer a barba e ao passar sabão na louça. Ao escovar os dentes com ela aberta, você gasta cerca de 13,5 litros de água em apenas dois minutos.</p>
-                </li>
+        <div class="cards">
+            <div class="card">
+                <p>Deixe a torneira fechada ao escovar os dentes, fazer a barba e ao passar sabão na louça. Ao escovar os dentes com ela aberta, você gasta cerca de 13,5 litros de água em apenas dois minutos.</p>               
+                   
+                <p>Priorize banhos curtos. Cinco minutos são suficientes para fazer a limpeza do corpo e, enquanto você passa sabonete, o registro deve ser fechado. Isso permite uma economia de até 30 mil litros no ano.</p>                          
+                   
+                <p>Evite duchas de alta pressão. Elas possuem uma vazão grande, de 20/30 litros por minuto. Um banho de 10 minutos em um chuveiro de 30 litros por minuto gasta em média 300 litros de água – a Organização Mundial da Saúde (OMS) diz que o consumo consciente por habitante é na ordem 112 litros por dia.</p>
+            </div>
 
-                <br>
-                <br>
-
-                <li>
-                   <p>Priorize banhos curtos. Cinco minutos são suficientes para fazer a limpeza do corpo e, enquanto você passa sabonete, o registro deve ser fechado. Isso permite uma economia de até 30 mil litros no ano.</p>
-                </li>
-                <br>
+            <div class="card">
                 
-                <br>
-                <li>
-                   <p>Evite duchas de alta pressão. Elas possuem uma vazão grande, de 20/30 litros por minuto. Um banho de 10 minutos em um chuveiro de 30 litros por minuto gasta em média 300 litros de água – a Organização Mundial da Saúde (OMS) diz que o consumo consciente por habitante é na ordem 112 litros por dia.</p>
-                </li>
+                <p>Organize a louça antes de lavá-la. Utilize uma bacia para deixar os utensílios de molho, para amolecer a sujeira, lave toda a louça e enxágue tudo de uma única vez. Isso e o uso de materiais biodegradáveis também ajudam na economia.</p>
+
+                <p>Espere juntar uma quantidade de roupas suficiente para lavar. Você também pode verificar se elas realmente precisam ser lavadas – várias peças, como calças jeans, podem ser usadas mais de uma vez antes de serem lavadas. </p>
                
-            </article>
-
-            <article class="card">
-                <li>
-                   <p>Organize a louça antes de lavá-la. Utilize uma bacia para deixar os utensílios de molho, para amolecer a sujeira, lave toda a louça e enxágue tudo de uma única vez. Isso e o uso de materiais biodegradáveis também ajudam na economia.</p>
-                </li>
-
-                <br>
-
-                <li>
-                    <p>Espere juntar uma quantidade de roupas suficiente para lavar. Você também pode verificar se elas realmente precisam ser lavadas – várias peças, como calças jeans, podem ser usadas mais de uma vez antes de serem lavadas. </p>
-                </li>
-
-                <br>
-
-                <li>
-                    <p>No jardim, evite regar as plantas nos horários de sol forte. Regar o gramado ou o jardim antes das 10 horas da manhã e depois das 7 horas da noite previne o excesso de evaporação. No inverno é possível regar as plantas dia sim, dia não. Com essas medidas, você pode economizar cerca de 96 litros de água diariamente só com as plantas. </p>
-                </li>
+                <p>No jardim, evite regar as plantas nos horários de sol forte. Regar o gramado ou o jardim antes das 10 horas da manhã e depois das 7 horas da noite previne o excesso de evaporação. No inverno é possível regar as plantas dia sim, dia não. Com essas medidas, você pode economizar cerca de 96 litros de água diariamente só com as plantas. </p>
+               
             
-            </article>
+            </div>
 
-            <article class="card">
-                <li>
-                <p>
-                    Use a vassoura para limpar o quintal, a calçada ou as áreas comuns de prédios e empresas – uma mangueira ligada por 15 minutos gasta 280 litros de água. Se precisar usar água, prefira equipamentos de limpeza a jato, que usam uma quantidade mínima de água aliada com uma forte pressão.
-                </p>
-                </li>
-
-                <br>   
-
-                <li>
-                <p>
-                    Ao lavar o carro use o balde com pano em vez de mangueira. Procure lavar menos o carro, principalmente na época de falta de chuvas.
-                </p>
-
-                <br>
-                                
-                 <li>
-                <p>
-                    Use cisternas para fazer a captação e armazenar a água da chuva. Você pode reutilizar essa água em regas, na limpeza do quintal, dos pisos, dentre outros.  
-                </p>
+            <div class="card">
                 
-                <br>
-
-                <li>
-                    <p>
-                        Não jogue lixo nos lagos, córregos, rios e mar.
-                    </p>
-                </li>
+                <p>Use a vassoura para limpar o quintal, a calçada ou as áreas comuns de prédios e empresas – uma mangueira ligada por 15 minutos gasta 280 litros de água. Se precisar usar água, prefira equipamentos de limpeza a jato, que usam uma quantidade mínima de água aliada com uma forte pressão.</p>
+        
+                <p>Ao lavar o carro use o balde com pano em vez de mangueira. Procure lavar menos o carro, principalmente na época de falta de chuvas.</p>
                 
-                <br>
+                <p>Use cisternas para fazer a captação e armazenar a água da chuva. Você pode reutilizar essa água em regas, na limpeza do quintal, dos pisos, dentre outros.</p>
                 
-                <li>
-                    <p>
-                        Conserte os vazamentos de imediato, assim que forem notados.
-                    </p>
-                </li>
+                <p>Não jogue lixo nos lagos, córregos, rios e mar.</p>
+                
+                <p>Conserte os vazamentos de imediato, assim que forem notados.</p>
+            </div>
+        </div>
 
-            </article>
-        </ol>
-        </section>
 
         <section class="artigos">
-            <article>
-            <figure class="consumo">
-            <!-- imagem exemplo -->
-            <img class="consumo_img" src="Imagens/consumo1.png" alt="Dicas">
-        </figure>
-            </article>
 
-            <article>
-            <figure class="consumo">
-            <!-- imagem exemplo -->
-            <img class="consumo_img" src="Imagens/consumo2.png" alt="Dicas">
-        </figure>
-            </article>
+            <div id="info">
+            <p>Em 2020, o consumo de água no Brasil (vazão retirada dos corpos hídricos) foi de aproximadamente 4,1 trilhões de metros cúbicos. A irrigação foi a principal responsável pelo uso da água, seguida pelo abastecimento urbano e industrial. </p>
+            
+            <p>Os dados da Agência Nacional de Águas e Saneamento Básico (ANA) indicam a seguinte distribuição percentual da vazão de água retirada para diferentes usos no Brasil em 2020: </p>
+            </div>
+            
+
+        <article>
+        <h2 id="consumo_agua">Consumo de Água no Brasil</h2>
+        <canvas id="meuGrafico" width="40" height="20"></canvas>
+
+        <script>
+        const ctx = document.getElementById('meuGrafico');
+
+        new Chart(ctx, {
+            type: 'bar',  // Tipo de gráfico
+            data: {
+                labels: ['Irrigação', 'Abastecimento Urbano', 'Indústria', 'Pecuária', 'Termelétricas', 'Abastecimento Rural', 'Mineração'],
+                datasets: [{
+                    label: 'Consumo %',
+                    data: [50.5, 23.9, 9.4, 8.0, 5.0, 1.6, 1.6],
+                    borderWidth: 1
+                }]
+            }, 
+            options: {
+            scales: {
+                y: {
+                    beginAtZero: true, // começa no zero
+                    min: 0,            // valor mínimo do eixo Y
+                    max: 100           // valor máximo do eixo Y
+                }
+            }
+            } 
+        });
+        </script>
+        </article>
+
         </section>
 
-        <!-- FORMULARIO DE INSCRICAO -->
-        <section class="formulario">
-            <h2>Inscreva-se para receber noticias</h2>
-
-            <form>
-                <label>Nome:</label>
-                <input type="text">
-
-                <label>Email:</label>
-                <input type="email">
-
-                <label>Cidade:</label>
-                <input type="text">
-
-                <label>Estado:</label>
-                <input type="text">
-
-                <label>
-                    <input type="checkbox">
-                    Aceito receber conteudos sobre sustentabilidade
-                </label>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <!-- ASIDE COM MIDIAS -->
-        <aside>
-            <div>
-                <iframe class="youtube" src="https://www.youtube.com/embed/Z7SSX-N8RHY?si=5txl6aM6RT2X7wPd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="videoconsumo">
+               <iframe width="100%" src="https://www.youtube.com/embed/pvGts9ktQoQ?si=vwlkB89RrLGv0wvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div>
-                <iframe class="youtube" src="https://www.youtube.com/embed/EWqnWXnXURw?si=M6iZtCfhAjchhDS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-            </div>
-        </aside>
 
     </main>
 
     <!-- RODAPE -->
     <footer>
-        <p>
-            Hotsite desenvolvido para trabalho final da disciplina Desenvolvimento Web - SENAC-RS
-        </p>
+        <p>Hotsite desenvolvido para trabalho final da disciplina Desenvolvimento Web - SENAC-RS</p>
     </footer>
 
 </div>

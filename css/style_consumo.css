@@ -159,20 +159,21 @@ form button{
 /******************************************************************
 ***************************Aside***********************************/
 aside{
-    background-color: #e9e9e9;
+    background-color: #D7CBD7;
     padding: 20px;
+    height: 400px;
 }
 
 aside div{
     background-color: #FFFFFF;
     width: 90%;
+    height: 40%;
     margin: 10px auto;
-    padding: 10px;
 }
 
-.youtube{
+.mapa, .youtube{
     width: 100%;
-    height: 250px;
+    height: 150%;
 }
 
 /******************************************************************
@@ -188,18 +189,109 @@ footer p{
     text-align: center;
 }
 
-#dicas{
+.dicas{
     background-color: #1D3557;
 }
 
-.consumo{
-    background-color: #70C1B3;
-    padding: 10px; 
+
+#info{
+    background-color: rgb(201, 191, 191);
+    
 }
 
-.consumo_img{
-    background-color: #70C1B3;
-    margin-left: 100px;
+#info p{
+    text-align: center;
+    
+}
+
+#consumo_agua{
+    text-align: center;
 }
 
 
+.cards p:hover{
+    transform: scale(1.1);
+}
+
+.card p{
+    margin-bottom: 18px;
+}
+
+#info p{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.videoconsumo{
+    padding: 15px;
+    background-color: #70C1B3;
+}
+
+.carrosel{
+    width: 100%;             /* tamanho do carrossel */
+    height: 350px;
+    overflow: hidden;         /* esconde o que passar da área */
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: auto;
+    position: relative; /* Colocar os botões para dentro do carrosel*/
+}
+
+/* Faixa das imagens */
+.carrosel-track{
+    display: flex;            /* deixar as imagens uma do lado da outra */
+    transition: transform 0.5s ease-in-out; /* Faz o efeito de passar para o lado*/
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajuste das imagens */
+.carrosel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fazer a imagem nao distorcer */
+}
+
+/* Botões */
+.btn{
+    position: absolute;  /* Deixar os botões dentro da imagem */
+    top: 50%; /* Deixar os botões no meio */
+    transform: translateY(-50%); /* centralizar */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+#esquerda{
+    left: 10px;
+}
+#direita{
+    right: 10px
+}
+
+.eventos{
+    background-color: white;
+    padding: 15px;
+}
+
+.cardsevento{
+    background-color: #70C1B3;
+    padding: 25px;
+    overflow: auto;
+
+}
+
+.eventos p{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.eventos h4{
+    text-align: center;
+}
+
+.eventos a{
+    text-decoration: none; color: inherit;
+}
