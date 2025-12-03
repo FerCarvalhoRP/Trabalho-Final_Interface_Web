@@ -1,0 +1,302 @@
+/******************************************************************
+*********************Configuracoes Gerais**************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#container{
+    background-color: #FFFFFF;
+    min-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/******************************************************************
+***************************Cabecalho*******************************/
+header{
+    background-color: #3AB4F2;
+    height: 120px;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #FFFFFF;
+}
+
+/******************************************************************
+**************************Banner**********************************/
+.destaque{
+    background-color: #F1F1F1;
+    height: 240px;
+}
+
+.destaque figure{
+    float: left;
+    width: 20%;
+    height: 200px;
+    margin: 20px;
+}
+
+.destaque figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.destaque p{
+    float: left;
+    width: 70%;
+    margin-top: 50px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+/******************************************************************
+**************************Cards***********************************/
+.cards{
+    background-color: #70C1B3;
+    padding: 25px;
+    overflow: auto;
+
+}
+
+.card{
+    background-color: #FFFFFF;
+    width: 28%;
+    float: left;
+    margin: 2%;
+    padding: 27px;
+    border-radius: 5px;
+}
+
+.card h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/******************************************************************
+************************Artigos************************************/
+.artigos{
+    background-color: #eef2f3;
+    padding: 20px;
+}
+
+.artigos article{
+    background-color: #FFFFFF;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+/******************************************************************
+************************Formulario*********************************/
+.formulario{
+    background-color: #86c8e9;
+    padding: 20px;
+}
+
+.formulario h2{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+form label{
+    display: block;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+form button{
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    font-weight: bold;
+}
+
+/******************************************************************
+***************************Aside***********************************/
+aside{
+    background-color: #D7CBD7;
+    padding: 20px;
+    height: 400px;
+}
+
+aside div{
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 40%;
+    margin: 10px auto;
+}
+
+.mapa, .youtube{
+    width: 100%;
+    height: 150%;
+}
+
+/******************************************************************
+***************************Rodape**********************************/
+footer{
+    background-color: #1D3557;
+    height: 80px;
+}
+
+footer p{
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.dicas{
+    background-color: #1D3557;
+}
+
+
+#info{
+    background-color: rgb(201, 191, 191);
+    
+}
+
+#info p{
+    text-align: center;
+    
+}
+
+#consumo_agua{
+    text-align: center;
+}
+
+
+.cards p:hover{
+    transform: scale(1.1);
+}
+
+.card p{
+    margin-bottom: 18px;
+}
+
+#info p{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.videoconsumo{
+    padding: 15px;
+    background-color: #70C1B3;
+}
+
+.youtubeconsumo{
+    height: 400px;
+    width: 100%;
+}
+
+.carrosel{
+    width: 100%;             /* tamanho do carrossel */
+    height: 350px;
+    overflow: hidden;         /* esconde o que passar da área */
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: auto;
+    position: relative; /* Colocar os botões para dentro do carrosel*/
+}
+
+/* Faixa das imagens */
+.carrosel-track{
+    display: flex;            /* deixar as imagens uma do lado da outra */
+    transition: transform 0.5s ease-in-out; /* Faz o efeito de passar para o lado*/
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajuste das imagens */
+.carrosel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fazer a imagem nao distorcer */
+}
+
+/* Botões */
+.btn{
+    position: absolute;  /* Deixar os botões dentro da imagem */
+    top: 50%; /* Deixar os botões no meio */
+    transform: translateY(-50%); /* centralizar */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+#esquerda{
+    left: 10px;
+}
+#direita{
+    right: 10px
+}
+
+.eventos{
+    background-color: white;
+    padding: 15px;
+}
+
+.cardsevento{
+    background-color: #70C1B3;
+    padding: 25px;
+    overflow: auto;
+
+}
+
+.eventos p{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.eventos h4{
+    text-align: center;
+}
+
+.eventos a{
+    text-decoration: none; color: inherit;
+}
